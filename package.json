@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nickila.github.io/clicky",
   "name": "clicky",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +20,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://nickila.github.io/clicky",
+  
   "browserslist": [
     ">0.2%",
     "not dead",
