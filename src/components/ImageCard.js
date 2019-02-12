@@ -3,8 +3,8 @@ import "./ImageCard.css";
 
 function ImageCard(props) {
     return (
-        <div>
-            <img alt="letter" src={props.image} onClick={() => props.chooseImg(props.id)} />
+        <div className="imageStuff">
+            <img alt="ultraman" key={props.id} src={props.image} onClick={() => props.chooseImg(props.id)} />
         </div>
     )
 }

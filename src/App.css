@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(25, 23, 34);
+    font-family: 'Righteous', sans-serif;
+    
+}
+
+
+.title {
+    text-align: center;
+    color: yellow;
+    font-size: 5rem;
+}
+.highScore {
+    text-align: right;
+    color: yellow;
+
+}
+
+.count {
+    color: yellow;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.imgDiv {
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+
+.countDiv {
+  margin-top: auto;
+}
+
+.scoreDiv {
+    margin-top: auto;
+
+}

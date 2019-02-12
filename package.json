@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animate.css": "^3.7.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
@@ -20,7 +21,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  
   "browserslist": [
     ">0.2%",
     "not dead",
