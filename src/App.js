@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import ImageCard from "./components/ImageCard";
 import images from "./images.json"
-// import ScoreBoard from "./components/ScoreBoard"
+import Title from "./components/Title"
+import ScoreBoard from './components/ScoreBoard';
+import HighScore from './components/HighScore';
 
 class App extends Component {
 
@@ -37,6 +39,7 @@ class App extends Component {
     if (this.state.arr.includes(id)) {
       if (this.state.count > this.state.highScore) {
         this.setState({ highScore: this.state.count })
+        
       }
       this.setState({ count: 0, arr: [] })
       console.log(this.state.arr);
@@ -51,20 +54,14 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        {/* <ScoreBoard 
-        count={this.count}
-        highScore={this.highScore}
-      /> */}
         <div className="row">
-          <div className="col-md-3 countDiv">
-            <h3 className="count">Score: {this.state.count}</h3>
-          </div>
-          <div className="col-md-6">
-            <h1 className="title">CLICKY GAME</h1>
-          </div>
-          <div className="col-md-3 scoreDiv">
-            <h3 className="highScore">High Score: {this.state.highScore}</h3>
-          </div>
+          <ScoreBoard 
+          count={this.state.count}
+          />
+          <Title />
+          <HighScore 
+          highScore={this.state.highScore}
+          />
         </div>
         <div className="row">
           {this.state.images.map(image => (
